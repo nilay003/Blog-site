@@ -1,0 +1,367 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1120px;
+    margin: 10px auto;
+}
+
+.hbody {
+    display: flex;
+}
+
+.footer {
+    margin: 10px auto;
+}
+
+.login {
+    border: 1px solid black;
+    margin: 10px auto;
+    width: 698px;
+}
+
+.login-form {
+    margin: 10px;
+    text-align: center;
+}
+
+.ahead {
+    display: flex;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1120px;
+    margin: 10px auto;
+}
+
+.hbody {
+    display: flex;
+}
+
+.footer {
+    margin: 10px auto;
+}
+
+.login {
+    border: 1px solid black;
+    margin: 10px auto;
+    width: 698px;
+}
+
+.login-form {
+    margin: 10px;
+    text-align: center;
+}
+
+.ahead {
+    display: flex;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {    
+    color: #fff;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.hbody img{
+    margin: 10px;
+    width: 140px;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+.aboutimg{
+    margin-top: 10px;
+    width: 1120px;
+}
+
+.home-body {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+.hnav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.hnav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.about-content {
+    padding: 10px;
+}
+
+.about-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.addpage {
+    padding: 10px;
+}
+
+.addpage form {
+    display: flex;
+    flex-direction: column;
+}
+
+.addpage label {
+    margin-bottom: 5px;
+}
+
+.addpage input,
+.addpage textarea {
+    margin-bottom: 10px;
+}
+
+.addpage button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.addpage button:hover {
+    background-color: #555;
+}
+
+.blogs {
+    padding: 10px;
+}
+
+.blogs table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.blogs th,
+.blogs td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+.editpage {
+    padding: 10px;
+}
+
+.editpage form {
+    display: flex;
+    flex-direction: column;
+}
+
+.editpage label {
+    margin-bottom: 5px;
+}
+
+.editpage input,
+.editpage textarea {
+    margin-bottom: 10px;
+}
+
+.editpage button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.editpage button:hover {
+    background-color: #555;
+}
+
+.login-form {
+    padding: 10px;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+}
+
+.login-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #555;
+}
+
+.w50 {
+    padding: 10px;
+}
+
+.w50 label {
+    margin-bottom: 5px;
+}
+
+.w50 input {
+    margin-bottom: 10px;
+}
+
+.w50 button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.w50 button:hover {
+    background-color: #555;
+}
+
+.pages-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pages-table th,
+.pages-table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+.pages-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.pages a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.member p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.member p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info,
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}

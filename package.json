@@ -1,0 +1,27 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "Nilay Patel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nilay"
+  ],
+  "author": "Nilaykumar Patel",
+  "license": "ISC",
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^41.2.1",
+    "body-parser": "^1.20.2",
+    "ckeditor4": "^4.24.0",
+    "ckeditor5": "^41.2.1",
+    "ejs": "^3.1.9",
+    "express": "^4.19.1",
+    "express-fileupload": "^1.5.0",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.2.4",
+    "quill": "^2.0.0-rc.4"
+  }
+}

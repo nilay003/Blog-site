@@ -1,0 +1,27 @@
+<%- include('layouts/h_body'); -%>
+<body>
+  
+  <section class="w50">
+    <form name="myform" method="Post" onsubmit="return formSubmit();"  action="" >
+      <label>Username</label>
+      <input id="username" type="text" name="username" autofocus><br/>
+
+      <label>Password</label>
+      <input id="password" type="password" name="password"><br/>
+      
+      <br/><br/>
+
+      <input type="submit" value="Login">
+      <p id="errors">
+        <div id="errors">
+          <% if(typeof(error) != 'undefined') { %>
+            <p class="errors"> <%= error %> </p>
+            <p class="errors"> <%= '-- Please fix above errors --' %> </p>
+        <%  } %>
+        </div>
+      </p>
+    </form>  
+</section>
+<div class="clear"></div>
+</body>
+<%- include('layouts/footer'); -%>

@@ -1,0 +1,29 @@
+<%- include('layouts/header.ejs'); -%>
+<%- include('layouts/body.ejs'); -%>
+<h2>Pages</h2>
+
+<% if (pages.length > 0) { %>
+    <table class="pages-table"> 
+        <thead>
+            <tr>
+                <th>Page Title</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% pages.forEach(function(page) { %>
+                <tr>
+                    <td><%= page.pagetitle %></td>
+                    <td>
+                        <a href="/editpages/<%= encodeURIComponent(page.pagetitle) %>">Edit</a> 
+                        <a href="/deletepage/<%= encodeURIComponent(page.pagetitle) %>">Delete</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+<% } else { %>
+    <p>No pages found.</p>
+<% } %>
+
+<%- include('layouts/footer.ejs'); -%>

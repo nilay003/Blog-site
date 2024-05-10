@@ -1,0 +1,58 @@
+<%- include('layouts/header.ejs'); -%>
+<%- include('layouts/body.ejs'); -%>
+
+<h2>Add Page</h2>
+<div class="addpage">
+    <form action="/savedata" method="POST" enctype="multipart/form-data">
+        <label for="pagetitle">Page Title:</label>
+        <input type="text" name="pagetitle" id="pagetitle"><br>
+        <label for="image">Image:</label>
+        <input type="file" class="form-input" name="myImage" id="myImage"><br>
+        <label for="content">Content:</label>
+        <textarea name="content" id="content"></textarea><br> <!-- textarea for CKEditor content -->
+        <div id="editor"></div>
+        <button type="submit">Submit</button>
+         <% if (typeof(error) !== 'undefined') { %>
+        <p class="errors"><%= error %></p>
+    <% } %>
+    <p id="errors">
+        <div id="errors">
+            <% if (typeof(errors) !== 'undefined') { %>
+                <% for (let error of errors) { %>
+                    <p class="errors"><%= error.msg %></p>
+                <% } %>
+                <p class="errors">-- Please fix above errors --</p>
+            <% } %>
+    </form>
+</div>  
+
+<!-- Include CKEditor script -->
+<script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script> 
+
+<script>
+    CKEDITOR.editorConfig = function(config) {
+        config.toolbarGroups = [
+            { name: 'clipboard', groups: ['clipboard', 'undo'] },
+            { name: 'editing', groups: ['find', 'selection', 'spellchecker', 'editing'] },
+            { name: 'basicstyles', groups: ['basicstyles', 'cleanup'] },
+            { name: 'document', groups: ['mode', 'document', 'doctools'] },
+            { name: 'forms', groups: ['forms'] },
+            '/',
+            { name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi', 'paragraph'] },
+            { name: 'links', groups: ['links'] },
+            { name: 'insert', groups: ['insert'] },
+            '/',
+            { name: 'styles', groups: ['styles'] },
+            { name: 'colors', groups: ['colors'] },
+            { name: 'tools', groups: ['tools'] },
+            { name: 'others', groups: ['others'] },
+            { name: 'about', groups: ['about'] }
+        ];
+
+        config.removeButtons = 'NewPage,ExportPdf,Preview,Print,Templates,PasteText,PasteFromWord,Scayt,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,CopyFormatting,RemoveFormat,Blockquote,CreateDiv,Anchor,HorizontalRule,SpecialChar,PageBreak,Iframe,Maximize,ShowBlocks,About,BGColor,Source,Save,BidiLtr,BidiRtl,Language,Unlink,Link,TextColor';
+    };
+
+    CKEDITOR.replace('content'); 
+</script>
+
+<%- include('layouts/footer.ejs'); -%>
